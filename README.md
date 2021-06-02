@@ -5,3 +5,4 @@ The scripts were used sequentially as follows:
 1_Quality.sh :: assess quality of raw sequence data using FastQC  
 2_Trim.sh :: trim reads using Trimmomatic and re-assess the quality using FastQC  
 3_Map.sh :: map the reads onto the reference genome using HiSat2 and count the mapped reads using Stringtie   
+PrepDE.py :: used in 3_Map.sh to convert files in ballgown folder to a count matrix   
