@@ -15,17 +15,17 @@ WORKDIR=/scratch/OSAseq/Trimmed3
 OUTDIR=/home/aubrln001/OSAseq/Trimmed3
 
 #Make directories
-##mkdir -p $WORKDIR
-#mkdir -p $OUTDIR
+mkdir -p $WORKDIR
+mkdir -p $OUTDIR
 
 #Change to data directory
-#cd $DATADIR
+cd $DATADIR
 
 #Make list of file names to trim
-#ls | grep ".fastq.gz" | cut -d "_" -f 1 | sort | uniq > list
+ls | grep ".fastq.gz" | cut -d "_" -f 1 | sort | uniq > list
 
 #Move list to working directory
-#mv list $WORKDIR
+mv list $WORKDIR
 
 #Change to working directory
 cd $WORKDIR
