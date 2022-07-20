@@ -19,17 +19,12 @@ mkdir -p $DATACOPY
 cd $DATACOPY
 cp $DATADIR/SL*.fastq.gz .
 
+#Run fastqc to assess quality - output will be a results folder + zip folder + html link to open & assess quality
 ls *_1.fastq.gz | time parallel -j+0 --eta 'fastqc {}'
 ls *_2.fastq.gz | time parallel -j+0 --eta 'fastqc {}'
 
-
-
-#Run fastqc to assess quality - output will be a results folder + zip folder + html link to open & assess quality
-#fastqc $DATADIR/*.fastq.gz
-
 #Copy the results to home directory for safe keeing
 cp *fastqc* $OUTDIR
-
 
 ###### You will then need to copy over the html files over to home desktop to visualize in a web browser to determine appropriate trimming parameters
 
