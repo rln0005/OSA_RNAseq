@@ -71,7 +71,7 @@ done<list
 #copy results to home directory
 cp *.txt $RESULTSDIR
 #move up 2 directories
-#cd ..
+cd ..
 
 #Use PrepDE.py to convert files in ballgown folder to a count matrix
 python /scratch/OSAseq/PrepDE.py /scratch/OSAseq/ballgown
