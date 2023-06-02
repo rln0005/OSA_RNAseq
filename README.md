@@ -1,5 +1,5 @@
 # OSA_RNAseq
-This repository contains the scripts used for processing canine osteosarcoma RNAseq data in the proposed manuscript titled "Transcriptomic Analysis of Canine Osteosarcoma from a Precision Medicine Perspective Reveals Limitations of Differential Gene Expression Studies".
+This repository contains the scripts used for processing canine osteosarcoma RNAseq data in the manuscript titled "Transcriptomic Analysis of Canine Osteosarcoma from a Precision Medicine Perspective Reveals Limitations of Differential Gene Expression Studies" (Nance et al, 2022). 
 
 The scripts were used sequentially as follows:  
 1_Quality.sh :: assess quality of raw sequence data using FastQC  
